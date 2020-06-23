@@ -155,7 +155,7 @@ be able to drop an actual tombstone the following needs to be true;
 - If the option ``only_purge_repaired_tombstones`` is enabled, tombstones are only removed if the data has also been
   repaired.
 
-If a node remains down or disconnected for longer than ``gc_grace_seconds`` it's deleted data will be repaired back to
+If a node remains down or disconnected for longer than ``gc_grace_seconds`` its deleted data will be repaired back to
 the other nodes and re-appear in the cluster. This is basically the same as in the "Deletes without Tombstones" section.
 Note that tombstones will not be removed until a compaction event even if ``gc_grace_seconds`` has elapsed.
 
